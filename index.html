@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Took Took Transfer — трансферы по Турции</title>
+  <meta name="description" content="Индивидуальные трансферы по Турции: Анталия, Даламан, Фетхие, Аланья, Стамбул, Бодрум. Встреча в аэропорту, минивэны, VIP, Sprinter.">
+  <style>
+    :root {
+      --navy: #071d33;
+      --navy-2: #0b2a47;
+      --gold: #d9a441;
+      --gold-2: #f2c76e;
+      --text: #172033;
+      --muted: #687386;
+      --bg: #f6f7fb;
+      --white: #ffffff;
+      --green: #1f9d62;
+      --shadow: 0 20px 60px rgba(7, 29, 51, .18);
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    a { color: inherit; text-decoration: none; }
+    .hero {
+      min-height: 92vh;
+      background:
+        linear-gradient(90deg, rgba(7,29,51,.96), rgba(7,29,51,.78) 48%, rgba(7,29,51,.38)),
+        radial-gradient(circle at 80% 20%, rgba(217,164,65,.32), transparent 28%),
+        linear-gradient(135deg, #071d33 0%, #123b5c 50%, #071d33 100%);
+      color: var(--white);
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -180px;
+      bottom: -140px;
+      width: 620px;
+      height: 620px;
+      border: 2px solid rgba(242,199,110,.20);
+      border-radius: 50%;
+    }
+    .nav {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      z-index: 2;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-2));
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      font-size: 25px;
+      box-shadow: var(--shadow);
+    }
+    .navlinks {
+      display: flex;
+      gap: 18px;
+      color: rgba(255,255,255,.82);
+      font-size: 15px;
+    }
+    .navlinks a:hover { color: var(--gold-2); }
+    .hero-inner {
+      max-width: 1160px;
+      margin: 96px auto 0;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: var(--gold-2);
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 6vw, 82px);
+      line-height: .98;
+      letter-spacing: -2.6px;
+    }
+    .lead {
+      max-width: 650px;
+      margin: 26px 0 34px;
+      font-size: 20px;
+      color: rgba(255,255,255,.84);
+    }
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 16px;
+      font-weight: 800;
+      transition: .2s ease;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), var(--gold-2));
+      color: var(--navy);
+      box-shadow: 0 16px 34px rgba(217,164,65,.24);
+    }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,.24);
+      color: white;
+      background: rgba(255,255,255,.08);
+    }
+    .hero-card {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: var(--radius);
+      padding: 26px;
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+    }
+    .van-visual {
+      height: 220px;
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(242,199,110,.42), transparent 32%),
+        linear-gradient(135deg, #111827, #0b2a47);
+      display: grid;
+      place-items: center;
+      font-size: 120px;
+      margin-bottom: 22px;
+    }
+    .stats {
+      display: grid;
+      gap: 12px;
+    }
+    .stat {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,.08);
+      border-radius: 16px;
+    }
+    .stat strong { color: var(--gold-2); }
+    .section {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 82px 24px;
+    }
+    .section h2 {
+      font-size: clamp(32px, 4vw, 52px);
+      letter-spacing: -1.5px;
+      line-height: 1.05;
+      margin: 0 0 16px;
+      color: var(--navy);
+    }
+    .section-intro {
+      max-width: 720px;
+      margin: 0 0 34px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: 0 12px 34px rgba(7,29,51,.07);
+      border: 1px solid rgba(7,29,51,.06);
+    }
+    .card .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: rgba(217,164,65,.16);
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+    .card h3 { margin: 0 0 8px; color: var(--navy); font-size: 21px; }
+    .card p { margin: 0; color: var(--muted); }
+    .routes {
+      background: #fff;
+      border-radius: 32px;
+      padding: 28px;
+      box-shadow: 0 12px 44px rgba(7,29,51,.08);
+    }
+    .route-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .route {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: var(--bg);
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .fleet {
+      background: linear-gradient(135deg, var(--navy), var(--navy-2));
+      color: white;
+    }
+    .fleet h2 { color: white; }
+    .fleet .section-intro { color: rgba(255,255,255,.75); }
+    .fleet .card {
+      background: rgba(255,255,255,.08);
+      color: white;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: none;
+    }
+    .fleet .card h3 { color: var(--gold-2); }
+    .fleet .card p { color: rgba(255,255,255,.78); }
+    .process {
+      counter-reset: step;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .step {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 22px;
+      border: 1px solid rgba(7,29,51,.06);
+      position: relative;
+    }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: var(--navy);
+      color: var(--gold-2);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    .contact {
+      background:
+        linear-gradient(135deg, rgba(7,29,51,.92), rgba(7,29,51,.76)),
+        linear-gradient(135deg, #123b5c, #071d33);
+      color: white;
+      border-radius: 34px;
+      padding: 42px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .contact h2 { color: white; }
+    .contact p { color: rgba(255,255,255,.78); }
+    .contact-box {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 24px;
+      padding: 22px;
+    }
+    .contact-box a {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.10);
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    footer {
+      padding: 28px 24px 46px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      .navlinks { display: none; }
+      .hero-inner, .contact { grid-template-columns: 1fr; }
+      .hero-inner { margin-top: 64px; }
+      .grid, .route-list, .process { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding-bottom: 64px; }
+      .section { padding: 58px 18px; }
+      .contact { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">🚐</div>
+        <div>
+          <div>Took Took Transfer</div>
+          <small style="color:rgba(255,255,255,.65)">Private transfers in Turkey</small>
+        </div>
+      </div>
+      <div class="navlinks">
+        <a href="#services">Услуги</a>
+        <a href="#routes">Маршруты</a>
+        <a href="#fleet">Авто</a>
+        <a href="#contact">Контакты</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">🇹🇷 Индивидуальные трансферы по Турции 24/7</div>
+        <h1>Спокойная поездка с аэропорта до отеля</h1>
+        <p class="lead">Встреча в аэропорту, помощь с багажом, комфортные минивэны, VIP и Sprinter. Работаем по Анталии, Даламану, Фетхие, Стамбулу, Бодруму и другим направлениям.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/905521789811">Написать в WhatsApp</a>
+          <a class="btn btn-secondary" href="https://t.me/renndov">Написать в Telegram</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="van-visual">🚐</div>
+        <div class="stats">
+          <div class="stat"><span>Встреча в аэропорту</span><strong>с табличкой*</strong></div>
+          <div class="stat"><span>Машины</span><strong>Vito / VIP / Sprinter</strong></div>
+          <div class="stat"><span>Оплата</span><strong>₺ / ₽ / наличные</strong></div>
+          <div class="stat"><span>Связь</span><strong>WhatsApp / Telegram</strong></div>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,.64);margin-top:14px">* Условия встречи могут зависеть от правил конкретного аэропорта.</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="services" class="section">
+    <h2>Что организуем</h2>
+    <p class="section-intro">Подбираем транспорт под пассажиров, багаж, детей, время прилёта и уровень комфорта.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">✈️</div><h3>Аэропорт — отель</h3><p>Встреча после прилёта, помощь с багажом и спокойная поездка до отеля или виллы.</p></div>
+      <div class="card"><div class="icon">🏨</div><h3>Отель — аэропорт</h3><p>Подача машины заранее, расчёт времени до рейса и контроль маршрута.</p></div>
+      <div class="card"><div class="icon">🛣️</div><h3>Межгород</h3><p>Фетхие, Анталия, Даламан, Аланья, Бодрум, Мармарис, Стамбул и другие маршруты.</p></div>
+      <div class="card"><div class="icon">👶</div><h3>С детьми</h3><p>По запросу подберём детское кресло и машину с местом для коляски и багажа.</p></div>
+      <div class="card"><div class="icon">🎒</div><h3>Большой багаж</h3><p>Чемоданы, коляски, велосипедные коробки и походные рюкзаки — заранее учитываем объём.</p></div>
+      <div class="card"><div class="icon">⭐</div><h3>VIP-поездки</h3><p>Свежие минивэны, VIP-салоны, бизнес-класс и Sprinter для групп.</p></div>
+    </div>
+  </section>
+
+  <section id="routes" class="section">
+    <h2>Популярные направления</h2>
+    <p class="section-intro">Можно заказать трансфер по готовому маршруту или прислать геоточку — мы посчитаем стоимость.</p>
+    <div class="routes">
+      <div class="route-list">
+        <div class="route">Antalya Airport → Alanya</div>
+        <div class="route">Antalya Airport → Belek</div>
+        <div class="route">Antalya Airport → Kemer</div>
+        <div class="route">Dalaman Airport → Fethiye</div>
+        <div class="route">Dalaman Airport → Ölüdeniz</div>
+        <div class="route">Fethiye → Antalya</div>
+        <div class="route">SAW → Istanbul Airport</div>
+        <div class="route">Istanbul Airport → Fatih</div>
+        <div class="route">Bodrum / Marmaris / Kaş</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fleet" class="section fleet">
+    <h2>Типы транспорта</h2>
+    <p class="section-intro">Не обещаем “любую машину”, пока не проверим наличие. Подбираем вариант под задачу.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">🚐</div><h3>Эконом минивэн</h3><p>Практичный вариант для семьи, багажа и обычного трансфера.</p></div>
+      <div class="card"><div class="icon">✨</div><h3>Комфорт / VIP</h3><p>Более свежие и ухоженные машины, хороший салон, спокойная подача.</p></div>
+      <div class="card"><div class="icon">🚌</div><h3>Sprinter / группы</h3><p>Для больших компаний, групп, объёмного багажа и дальних маршрутов.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Как проходит бронирование</h2>
+    <div class="process">
+      <div class="step"><strong>Отправляете маршрут</strong><p>Дата, время, откуда и куда, пассажиры, багаж.</p></div>
+      <div class="step"><strong>Подбираем машину</strong><p>Уточняем цену, класс авто и условия встречи.</p></div>
+      <div class="step"><strong>Фиксируем бронь</strong><p>После оплаты за бронирование закрепляем трансфер.</p></div>
+      <div class="step"><strong>Едете спокойно</strong><p>Перед поездкой отправляем данные по машине и водителю.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="contact">
+      <div>
+        <h2>Нужен трансфер?</h2>
+        <p>Напишите маршрут, дату, время, количество пассажиров и багаж. Мы быстро подберём подходящий вариант.</p>
+      </div>
+      <div class="contact-box">
+        <a href="https://wa.me/905521789811">WhatsApp: +90 552 178 98 11</a>
+        <a href="https://t.me/renndov">Telegram: @renndov</a>
+        <a href="mailto:info@took-took-transfer.ru">info@took-took-transfer.ru</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © Took Took Transfer. Индивидуальные трансферы по Турции.
+  </footer>
+</body>
+</html>
